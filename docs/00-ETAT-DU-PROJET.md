@@ -1,6 +1,6 @@
 # État du projet — Pack Organisation Étudiant 2026-2027
 
-*Dernière mise à jour : 24 août 2026*
+*Dernière mise à jour : 24 août 2026 — titulaire du compte et nom de boutique confirmés*
 
 ## Où on en est
 
@@ -41,7 +41,7 @@ PRODUIT ✅ FINI          BOUTIQUE ⏳ À CRÉER (toi)      PROMOTION 📦 PRÊT
 | Outil de création | HTML/CSS rendu par Chromium | 0 €, reproductible, aucune retouche manuelle |
 | Plateforme | **Payhip** (offre gratuite, 5 %) | Le moins cher sur un produit à 3,99 € ; TVA UE gérée |
 | Etsy | **Plus tard**, après 10 ventes | Frais de mise en ligne inutiles avant validation |
-| Nom de boutique | **Studio Récap** (3 alternatives prêtes) | Court, extensible à toute la gamme |
+| Nom de boutique | **Studio Récap** ✅ confirmé | Court, extensible à toute la gamme |
 | Prix de lancement | **3,99 €**, puis 4,99 € après 25 ventes | Achat impulsif ; les frais fixes pèsent trop en dessous |
 | Paliers 2,99/4,99/7,99 | Repoussés | Demandent 3 produits distincts (doc 05) |
 | Émojis des titres | Remplacés par des pictogrammes SVG | Cohérence visuelle (doc 14) |
@@ -57,9 +57,10 @@ Ce sont des actions personnelles — personne ne peut les faire à ta place.
 
 👉 **Prochaine action : `docs/07-mise-en-ligne-pas-a-pas.md`, 45 minutes.**
 
-⚠️ Si tu es mineur : lis d'abord `docs/02-conditions-age-et-cadre-legal.md`. Le compte
-doit être ouvert par un parent ou tuteur légal. Ce n'est pas contournable, et essayer de
-le contourner fait perdre le compte **et** l'argent.
+✅ **Titulaire du compte confirmé : toi (majeur).** Aucune démarche préalable, aucun
+statut à créer pour faire les premières ventes. Le point fiscal est traité au § 3 du
+doc 02 : la micro-entreprise devient nécessaire quand l'activité devient régulière,
+pas pour tester.
 
 ## Après la mise en ligne
 
@@ -72,6 +73,7 @@ le contourner fait perdre le compte **et** l'argent.
 
 | Information | Pourquoi elle est nécessaire | Quand |
 |---|---|---|
-| Ton âge / qui détient le compte | Détermine qui ouvre le compte Payhip | Avant l'étape 8 |
-| Nom de boutique définitif | « Studio Récap » est peut-être déjà pris | À l'inscription |
+| ~~Qui détient le compte~~ | ✅ **Réglé** — toi, tu es majeur | — |
+| ~~Nom de boutique~~ | ✅ **Réglé** — Studio Récap | — |
+| Disponibilité de `studiorecap` | Si le nom est pris sur Payhip ou TikTok, on bascule sur « Méthode Claire » | À l'inscription |
 | L'URL de ta page produit | À mettre dans les bios TikTok / Instagram / Pinterest | Après l'étape 10 |

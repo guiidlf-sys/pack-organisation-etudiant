@@ -18,7 +18,11 @@
 Il n'y a pas d'exception, parce que recevoir des paiements suppose un compte bancaire
 et une vérification d'identité.
 
-## 2. Si tu es mineur
+> ✅ **Ta situation est connue : tu es majeur.** Le § 3 est celui qui te concerne.
+> Le § 2 est conservé pour référence (utile si un jour tu travailles avec quelqu'un
+> de mineur sur le projet).
+
+## 2. Si tu es mineur (ne te concerne pas)
 
 **Ce qu'il ne faut pas faire :** mentir sur ton âge ou créer un compte à un faux nom.
 En cas de contrôle, le compte est fermé et **l'argent gagné peut être bloqué**. Tout le
@@ -42,10 +46,20 @@ la boutique, et les membres de la boutique doivent être listés dans la section
 le produit est fini, les frais sont de 0 €, aucun engagement, aucun abonnement,
 et le compte peut être fermé à tout moment.
 
-## 3. Si tu es majeur
+## 3. Si tu es majeur ← **ton cas**
 
-Tu crées le compte toi-même. Rien de particulier côté plateforme : e-mail, mot de passe,
-puis connexion de ton compte Stripe ou PayPal avec vérification d'identité.
+Tu crées le compte toi-même, rien de particulier :
+
+1. Compte Payhip avec ton e-mail.
+2. Connexion de **ton** compte Stripe ou PayPal.
+3. Vérification d'identité demandée par Stripe/PayPal (pièce d'identité, quelques minutes).
+4. C'est tout — aucune démarche préalable n'est nécessaire pour faire ta première vente.
+
+**Quand faut-il créer une micro-entreprise ?** Pas pour tester. Tu peux vendre quelques
+exemplaires et voir si le produit prend. Dès que l'activité devient régulière (des ventes
+chaque mois, pas trois en tout), il faut un statut : la micro-entreprise se crée
+gratuitement sur le guichet unique de l'INPI, en ligne, en une vingtaine de minutes.
+Les revenus sont à déclarer dans tous les cas (§ 4).
 
 ## 4. Le côté fiscal, en clair
 

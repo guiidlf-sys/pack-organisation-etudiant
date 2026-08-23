@@ -7,8 +7,9 @@
 
 ## Avant de commencer — la checklist
 
-- [ ] Une adresse e-mail (celle du parent/tuteur si tu es mineur — voir doc 02)
-- [ ] Un compte PayPal **ou** Stripe au nom de la personne majeure titulaire
+- [ ] Ton adresse e-mail
+- [ ] Un compte PayPal **ou** Stripe à ton nom (créé pendant l'inscription si tu n'en as pas)
+- [ ] Une pièce d'identité à portée de main (vérification Stripe/PayPal)
 - [ ] Les 2 PDF : `dist/Pack_Organisation_Etudiant_2026_2027.pdf` et `..._TABLETTE.pdf`
 - [ ] Les 8 images : `dist/images/boutique/`
 - [ ] Le logo : `dist/images/marque/logo-carre.png`
