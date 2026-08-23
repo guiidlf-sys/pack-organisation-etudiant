@@ -1,0 +1,15 @@
+{
+  "name": "pack-organisation-etudiant",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pack Organisation Étudiant 2026-2027 — produit numérique (planner PDF) + assets boutique",
+  "scripts": {
+    "build": "node build/render.mjs",
+    "mockups": "node build/mockups.mjs",
+    "all": "npm run build && npm run mockups"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.1"
+  }
+}

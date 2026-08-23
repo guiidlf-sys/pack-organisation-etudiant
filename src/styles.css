@@ -1,0 +1,300 @@
+/* ==========================================================================
+   PACK ORGANISATION ÉTUDIANT 2026-2027 — Feuille de style produit
+   Format A4 (210 x 297 mm) — identité bleu/violet, minimaliste, imprimable
+   ========================================================================== */
+
+@import url('../assets/fonts/fonts.css');
+
+:root{
+  --violet:#6C4FE0;
+  --violet-d:#4B34B0;
+  --violet-l:#8B5CF6;
+  --blue:#4B63E8;
+  --ink:#14142B;
+  --ink-2:#3C3A57;
+  --gray:#6E6B85;
+  --gray-l:#9C99B0;
+  --line:#E5E2F4;
+  --line-2:#EEECFA;
+  --tint:#F7F6FF;
+  --tint-2:#F2F0FE;
+  --red:#E5484D;
+  --amber:#F0A020;
+  --green:#17A673;
+
+  --radius:3.4mm;
+  --radius-s:1.6mm;
+  --pad:13mm;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html,body{
+  font-family:'Inter','Liberation Sans',sans-serif;
+  color:var(--ink);
+  background:#DDDBE8;
+  -webkit-print-color-adjust:exact;
+  print-color-adjust:exact;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ---------------------------------------------------------------- PAGE --- */
+@page{ size:A4; margin:0 }
+
+.page{
+  position:relative;
+  width:210mm;
+  height:297mm;
+  padding:12mm var(--pad) 10mm;
+  background:#fff;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  page-break-after:always;
+  break-after:page;
+}
+.page:last-child{page-break-after:auto;break-after:auto}
+
+/* Filet d'identité en haut de chaque page */
+.page::before{
+  content:'';
+  position:absolute;top:0;left:0;right:0;height:2.6mm;
+  background:linear-gradient(90deg,var(--blue) 0%,var(--violet) 55%,var(--violet-l) 100%);
+}
+
+/* ---------------------------------------------------------------- HEAD --- */
+.head{display:flex;align-items:center;gap:3.6mm;padding-bottom:3.4mm;border-bottom:.5mm solid var(--line-2);margin-bottom:5mm}
+.head .ic{
+  flex:0 0 auto;width:11mm;height:11mm;border-radius:3mm;
+  background:var(--tint-2);
+  display:flex;align-items:center;justify-content:center;
+}
+.head .ic svg{width:6.4mm;height:6.4mm;display:block}
+.head h2{
+  font-family:'Outfit',sans-serif;font-weight:800;font-size:15.5pt;line-height:1.05;
+  letter-spacing:-.01em;color:var(--ink);text-transform:uppercase;
+}
+.head .sub{font-size:8pt;color:var(--gray);margin-top:.9mm;letter-spacing:.01em}
+
+.body{flex:1 1 auto;display:flex;flex-direction:column;min-height:0}
+
+/* ---------------------------------------------------------------- FOOT --- */
+.foot{
+  display:flex;align-items:center;justify-content:space-between;
+  padding-top:3mm;margin-top:4mm;border-top:.4mm solid var(--line-2);
+  font-size:6.6pt;color:var(--gray-l);letter-spacing:.09em;text-transform:uppercase;
+}
+.foot .num{
+  font-family:'Outfit',sans-serif;font-weight:700;font-size:7pt;letter-spacing:.02em;
+  color:#fff;background:var(--violet);
+  min-width:7.4mm;height:5.2mm;border-radius:2.6mm;
+  display:flex;align-items:center;justify-content:center;padding:0 2mm;
+}
+
+/* -------------------------------------------------------------- BLOCKS --- */
+.card{border:.4mm solid var(--line);border-radius:var(--radius);padding:4.6mm 5mm;background:#fff}
+.card.tinted{background:var(--tint);border-color:var(--line-2)}
+.card.accent{border:none;background:linear-gradient(135deg,var(--blue) 0%,var(--violet) 60%,var(--violet-l) 100%);color:#fff}
+.card.accent .lbl,.card.accent .hint{color:rgba(255,255,255,.82)}
+.card.accent .wl{border-bottom-color:rgba(255,255,255,.42)}
+
+.lbl{
+  font-family:'Outfit',sans-serif;font-weight:700;font-size:8.4pt;letter-spacing:.075em;
+  text-transform:uppercase;color:var(--violet);margin-bottom:2.6mm;
+  display:flex;align-items:center;gap:2mm;
+}
+.lbl svg{width:4mm;height:4mm;flex:0 0 auto}
+.lbl .dot{width:3.2mm;height:3.2mm;border-radius:50%;flex:0 0 auto}
+.lbl.ink{color:var(--ink)}
+.hint{font-size:7pt;color:var(--gray-l);font-weight:400;letter-spacing:.01em;text-transform:none}
+
+.grid{display:grid;gap:4mm}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:1fr 1fr 1fr}
+.gap-s{gap:3mm}
+.stack{display:flex;flex-direction:column}
+.spread{flex:1 1 auto;display:flex;flex-direction:column;justify-content:space-between}
+.row{display:flex;align-items:center}
+.mt-a{margin-top:auto}
+
+/* ------------------------------------------------- LIGNES D'ÉCRITURE ----- */
+.wl{border-bottom:.35mm solid var(--line);height:8.6mm}
+.wl.s{height:7.2mm}
+.wl.l{height:10mm}
+.wl:last-child{margin-bottom:0}
+.wl.num{position:relative;padding-left:6.5mm}
+.wl.num::before{
+  content:attr(data-n);position:absolute;left:0;bottom:1.6mm;
+  font-family:'Outfit',sans-serif;font-weight:700;font-size:8pt;color:var(--violet-l);
+}
+.wbox{border:.4mm dashed var(--line);border-radius:var(--radius-s);background:var(--tint)}
+.field{display:flex;align-items:flex-end;gap:2.4mm}
+.field .k{
+  font-size:8pt;font-weight:600;color:var(--ink-2);white-space:nowrap;
+  padding-bottom:1.4mm;
+}
+.field .v{flex:1 1 auto;border-bottom:.35mm solid var(--line);height:8mm}
+
+/* -------------------------------------------------------------- CHECKS --- */
+.ck{display:inline-block;width:4mm;height:4mm;border:.4mm solid #C7C2E6;border-radius:1.1mm;flex:0 0 auto;background:#fff;vertical-align:middle}
+.ck.r{border-radius:50%}
+.task{display:flex;align-items:flex-end;gap:2.6mm;height:8.4mm;padding-bottom:1.3mm;border-bottom:.35mm solid var(--line-2)}
+.task .ln{flex:1 1 auto;height:100%}
+.task:last-child{border-bottom:none}
+
+/* -------------------------------------------------------------- TABLES --- */
+table{width:100%;border-collapse:collapse;table-layout:fixed}
+th{
+  font-family:'Outfit',sans-serif;font-weight:700;font-size:7.4pt;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--violet-d);background:var(--tint-2);
+  padding:2.6mm 2mm;text-align:left;border:.35mm solid var(--line);
+}
+th.c,td.c{text-align:center}
+td{border:.35mm solid var(--line);height:var(--rh,8.4mm);padding:0 2mm;font-size:8pt;color:var(--ink-2)}
+td.h{background:var(--tint);font-family:'Outfit',sans-serif;font-weight:600;font-size:7.6pt;color:var(--violet-d);text-align:center}
+tr.alt td{background:#FCFCFF}
+td .ck{display:block;margin:0 auto}
+
+/* ---------------------------------------------------------- COUVERTURE --- */
+.cover{padding:0;background:#fff}
+.cover::before{display:none}
+.cover-top{
+  position:relative;height:152mm;
+  background:linear-gradient(150deg,#3F55E0 0%,#6C4FE0 48%,#9061F0 100%);
+  padding:20mm 20mm 0;color:#fff;overflow:hidden;
+}
+/* formes décoratives */
+.cover-top .blob{position:absolute;border-radius:50%;background:rgba(255,255,255,.075)}
+.cover-eyebrow{
+  display:inline-flex;align-items:center;gap:2.4mm;
+  border:.4mm solid rgba(255,255,255,.5);border-radius:20mm;padding:2mm 5mm;
+  font-family:'Outfit',sans-serif;font-weight:600;font-size:8.4pt;letter-spacing:.16em;text-transform:uppercase;
+}
+.cover-title{
+  font-family:'Outfit',sans-serif;font-weight:800;font-size:40pt;line-height:.98;
+  letter-spacing:-.022em;margin-top:9mm;text-transform:uppercase;
+}
+.cover-title span{display:block}
+.cover-title .l2{font-size:28pt;letter-spacing:-.012em;color:rgba(255,255,255,.94);margin-top:2mm}
+.cover-tag{
+  font-size:11pt;line-height:1.5;color:rgba(255,255,255,.9);
+  margin-top:8mm;max-width:118mm;font-weight:400;
+}
+.cover-icons{position:absolute;right:20mm;bottom:0;display:flex;gap:4mm}
+.cover-icons .ci{
+  width:17mm;height:17mm;border-radius:4.4mm;background:rgba(255,255,255,.14);
+  border:.4mm solid rgba(255,255,255,.28);
+  display:flex;align-items:center;justify-content:center;
+}
+.cover-icons .ci svg{width:8.6mm;height:8.6mm}
+.cover-bottom{height:145mm;padding:13mm 20mm 12mm;display:flex;flex-direction:column}
+.cover-modules{display:flex;flex-wrap:wrap;gap:2.6mm}
+.cover-modules span{
+  font-family:'Outfit',sans-serif;font-weight:600;font-size:9pt;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--violet-d);background:var(--tint-2);border-radius:20mm;padding:2.4mm 5mm;
+}
+.cover-list{
+  margin-top:9mm;display:grid;grid-template-columns:1fr 1fr;gap:2.2mm 8mm;
+}
+.cover-list .it{
+  display:flex;align-items:center;gap:2.6mm;
+  font-size:9pt;color:var(--ink-2);
+}
+.cover-list .it .n{
+  flex:0 0 auto;width:5.6mm;height:5.6mm;border-radius:1.6mm;background:var(--tint-2);
+  font-family:'Outfit',sans-serif;font-weight:700;font-size:6.6pt;color:var(--violet);
+  display:flex;align-items:center;justify-content:center;
+}
+.cover-list-title{
+  font-family:'Outfit',sans-serif;font-weight:700;font-size:8.4pt;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--gray-l);margin-top:9mm;
+}
+.cover-meta{
+  margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;
+  border-top:.5mm solid var(--line);padding-top:7mm;
+}
+.cover-edition{font-family:'Outfit',sans-serif;font-weight:800;font-size:19pt;letter-spacing:-.01em;color:var(--ink)}
+.cover-edition small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-l);margin-bottom:2mm}
+.cover-sig{text-align:right;font-size:8pt;color:var(--gray);line-height:1.6}
+
+/* --------------------------------------------------------- PAGE FINALE --- */
+.end{
+  background:linear-gradient(160deg,#3F55E0 0%,#6C4FE0 52%,#9061F0 100%);
+  color:#fff;align-items:center;justify-content:center;text-align:center;padding:24mm 22mm;
+}
+.end::before{background:rgba(255,255,255,.28)}
+.end .heart{width:15mm;height:15mm;margin:0 auto 8mm}
+.end h2{font-family:'Outfit',sans-serif;font-weight:800;font-size:34pt;letter-spacing:-.02em;line-height:1.05;text-transform:uppercase}
+.end .quote{font-size:13pt;line-height:1.7;color:rgba(255,255,255,.92);margin-top:8mm}
+.end .thanks{
+  margin-top:12mm;border-top:.4mm solid rgba(255,255,255,.3);padding-top:8mm;
+  font-size:10pt;color:rgba(255,255,255,.9);line-height:1.9;
+}
+.end .brand{font-family:'Outfit',sans-serif;font-weight:700;font-size:11pt;letter-spacing:.1em;text-transform:uppercase}
+.end .legal{font-size:7.4pt;color:rgba(255,255,255,.62);margin-top:9mm;letter-spacing:.04em}
+
+/* ------------------------------------------------------ HABIT / MONTH ---- */
+.tracker{width:100%;border-collapse:collapse;table-layout:fixed}
+.tracker th{padding:2mm .4mm;font-size:5.6pt;letter-spacing:0;text-align:center}
+.tracker th.hab{width:36mm;text-align:left;padding-left:3mm;font-size:7.4pt;letter-spacing:.06em}
+.tracker td{height:14.6mm;padding:0;border:.3mm solid var(--line-2)}
+.tracker td.hab{
+  padding-left:3mm;font-family:'Outfit',sans-serif;font-weight:600;font-size:8.2pt;
+  color:var(--ink-2);background:var(--tint);border-color:var(--line);
+}
+.tracker td .cell{display:block;width:4mm;height:4mm;border:.3mm solid #CFCAE8;border-radius:1mm;margin:0 auto;background:#fff}
+
+.cal{width:100%;border-collapse:collapse;table-layout:fixed}
+.cal th{font-size:7.4pt;padding:2.4mm 0;text-align:center}
+.cal td{height:21mm;vertical-align:top;padding:1.4mm 1.8mm;border:.35mm solid var(--line)}
+
+/* --------------------------------------------- RÉPARTITION VERTICALE ---- */
+/* .fill : les lignes/tâches enfants se répartissent pour occuper toute la
+   hauteur disponible — évite les blocs tassés en bas avec un vide au-dessus. */
+.fill{display:flex;flex-direction:column;flex:1 1 auto;min-height:0}
+.fill > .wl,.fill > .task{flex:1 1 auto}
+.card.fillcard{display:flex;flex-direction:column;flex:1 1 auto;min-height:0}
+.grid.fillgrid{flex:1 1 auto;grid-auto-rows:1fr;min-height:0}
+
+/* ---------------------------------------------------------- UTILITAIRES -- */
+.sep{height:.35mm;background:var(--line-2);margin:3mm 0}
+.pill{
+  display:inline-flex;align-items:center;gap:1.8mm;
+  font-family:'Outfit',sans-serif;font-weight:700;font-size:7.6pt;letter-spacing:.07em;text-transform:uppercase;
+  border-radius:20mm;padding:1.6mm 3.6mm;
+}
+.pill.red{background:#FDEDEE;color:#B4262B}
+.pill.amber{background:#FEF4E3;color:#96620A}
+.pill.green{background:#E7F7F1;color:#0D7250}
+.dot-red{background:var(--red)}
+.dot-amber{background:var(--amber)}
+.dot-green{background:var(--green)}
+.txt-s{font-size:7.4pt;color:var(--gray);line-height:1.55}
+.center{text-align:center}
+.bold{font-weight:700}
+
+/* --------------------------------------------- VERSION TABLETTE (nav) ---- */
+.nav{display:none}
+body.tablet .nav{
+  display:flex;flex-wrap:wrap;gap:1.2mm;
+  padding-top:3mm;margin-top:3mm;border-top:.4mm solid var(--line-2);
+}
+body.tablet .nav a{
+  font-family:'Outfit',sans-serif;font-weight:600;font-size:6.4pt;
+  color:var(--violet-d);background:var(--tint-2);border-radius:1.6mm;
+  padding:1.3mm 2.1mm;text-decoration:none;min-width:5.6mm;text-align:center;
+}
+body.tablet .nav a.on{background:var(--violet);color:#fff}
+body.tablet .page{padding-bottom:7mm}
+body.tablet .foot{margin-top:3mm}
+
+/* ------------------------------------------------------------- ÉCRAN ----- */
+@media screen{
+  body{padding:10mm 0;display:flex;flex-direction:column;align-items:center;gap:8mm}
+  .page{box-shadow:0 3mm 12mm rgba(20,20,43,.18)}
+}
+
+/* couleur des pictogrammes d'en-tête */
+.head .ic{color:var(--violet)}
+.cover-icons .ci{color:#fff}
+.end .heart{color:#fff}
