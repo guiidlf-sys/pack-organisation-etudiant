@@ -51,6 +51,7 @@ de l'année. On ne recommence jamais à zéro pour trouver des clients.
 | # | Produit | Contenu | Prix | Quand |
 |---|---|---|---|---|
 | 1 | **Pack Organisation Étudiant** | 15 pages — le socle | 3,99 → 4,99 € | ✅ fait |
+| 1b | **Formule BASIC** | 5 pages essentielles — entrée de gamme | 2,99 € | ✅ fait |
 | 2 | **Pack Révisions** | Fiches de révision, méthodes, plan de révision longue durée, suivi des chapitres | 3,99 € | Après 10 ventes |
 | 3 | **Pack Examens** | Rétroplanning, suivi des annales, gestion du stress, checklist du jour J | 4,99 € | Novembre |
 | 4 | **Pack Brevet** | Version Examens adaptée au collège, par matière | 4,99 € | Janvier |
@@ -58,7 +59,7 @@ de l'année. On ne recommence jamais à zéro pour trouver des clients.
 | 6 | **Pack Étudiant (supérieur)** | Semestres, partiels, planning de TD, budget | 5,99 € | Été |
 | 7 | **Pack Planning** | Plannings seuls : jour, semaine, mois, année | 2,99 € | Entrée de gamme |
 | 8 | **Pack Organisation Quotidienne** | Hors scolaire : habitudes, tâches, routines | 3,99 € | Toute l'année |
-| 9 | **ULTIMATE** | Tous les packs réunis | 7,99 → 14,99 € | Dès 3 packs |
+| 9 | **ULTIMATE** | ✅ déjà en ligne : pack complet + 5 pages bonus. Deviendra « tous les packs réunis » | 7,99 → 14,99 € | ✅ fait / à enrichir |
 
 ## La règle de production
 

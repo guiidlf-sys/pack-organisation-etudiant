@@ -3,18 +3,21 @@
 ## Contrôle automatique
 
 ```bash
-npm run verify      # 57 contrôles, sortie en erreur si un seul échoue
+npm run verify      # 137 contrôles, sortie en erreur si un seul échoue
 ```
 
-Résultat de la dernière exécution : **57 contrôles réussis, 0 problème.**
+Résultat de la dernière exécution : **137 contrôles réussis, 0 problème.**
+Les contrôles tournent sur **les trois éditions** (BASIC 7 p., COMPLETE 15 p., ULTIMATE 20 p.).
 
 Ce que le script vérifie (`build/verify.mjs`) :
 
 | Contrôle | Résultat |
 |---|---|
-| Les 2 PDF sont générés et non vides | ✅ |
-| Les 15 aperçus de page + 8 images boutique + 3 visuels de marque existent | ✅ |
-| Le document contient exactement **15 pages** | ✅ |
+| Les **6 PDF** (3 formules × impression + tablette) sont générés et non vides | ✅ |
+| Les 20 aperçus de page + 10 images boutique + 3 visuels de marque existent | ✅ |
+| Chaque édition contient **exactement** le nombre de pages attendu (7 / 15 / 20) | ✅ |
+| La numérotation des ancres est continue dans chaque édition | ✅ |
+| Les **13 émojis du cahier des charges** sont présents | ✅ |
 | Toutes les pages ont **le même format** (794 × 1123 px @96 dpi = A4) | ✅ |
 | **Aucun bloc ne déborde** de la zone imprimable | ✅ |
 | **Deux polices seulement** sur tout le document (Inter, Outfit) | ✅ |
@@ -42,32 +45,35 @@ défauts, tous corrigés, puis une seconde relecture a validé le résultat.
 | 7 | 2, 10, 14 | Deux pictogrammes illisibles à 6 mm (fusée, bras) | Redessinés ; ajout de `trend`, `heartO`, `calCheck`, `more` |
 | 8 | tout | Apostrophes droites (') au lieu des apostrophes françaises (’) | Correction typographique sur l'ensemble du document |
 
-## Décision de conception à signaler
+## Conformité au cahier des charges
 
-Le cahier des charges plaçait des émojis dans les titres de page (📅 ✅ 📚 🧠…).
-Ils ont été remplacés par un **jeu de 26 pictogrammes SVG dessinés pour le projet**,
-dans le violet de la marque.
+Une première version remplaçait les émojis des titres (📅 ✅ 📚 🧠…) par des pictogrammes
+SVG, pour des raisons d'homogénéité visuelle. **Cette substitution a été annulée** : le
+cahier des charges plaçait des émojis précis à des endroits précis, et ils sont désormais
+repris **à l'identique**, aux 13 titres de page comme aux intitulés de section
+(⭐ 🔑 💡 ❓ 🎯 📚 💪 🚀 📌 🔴 🟡 🟢 🎉 ⚠️ 💜).
 
-**Pourquoi :** les émojis multicolores rendent l'ensemble hétérogène et donnent un aspect
-« modèle gratuit », ce qui contredit les autres exigences du brief (design minimaliste,
-professionnel, bleu/violet, identité visuelle unique sur toutes les pages). Les
-pictogrammes maison portent le même sens, s'impriment proprement en noir et blanc et
-pèsent moins lourd dans le PDF.
+Le script `verify` contrôle explicitement leur présence : la substitution ne peut plus
+réapparaître sans être signalée.
 
-**Tous les textes du cahier des charges ont été conservés à l'identique**, seuls les
-caractères émojis ont été remplacés par leur équivalent dessiné.
+Les pictogrammes SVG maison ne servent plus que sur la couverture, là où le cahier des
+charges demande « des icônes : livres, calendrier, crayon et objectif » sans préciser
+d'émoji.
 
 ## Fichiers exportés
 
-| Fichier | Taille | Contenu |
-|---|---|---|
-| `dist/Pack_Organisation_Etudiant_2026_2027.pdf` | ~460 Ko | 15 pages A4, prêt à imprimer |
-| `dist/Pack_Organisation_Etudiant_2026_2027_TABLETTE.pdf` | ~670 Ko | 15 pages + **225 liens internes** de navigation |
-| `dist/images/pages/page-01…15.png` | — | Aperçus haute définition (1588 × 2248 px ≈ 190 dpi) |
-| `dist/images/boutique/*.png` | — | 8 images commerciales 2000 × 2000 |
-| `dist/images/marque/*.png` | — | Logo carré, logo horizontal, bannière |
+| Fichier | Contenu |
+|---|---|
+| `..._2026_2027_BASIC.pdf` / `_BASIC_TABLETTE.pdf` | Formule BASIC — 7 pages |
+| `..._2026_2027.pdf` / `_TABLETTE.pdf` | Formule COMPLETE — 15 pages |
+| `..._2026_2027_ULTIMATE.pdf` / `_ULTIMATE_TABLETTE.pdf` | Formule ULTIMATE — 20 pages |
+| `dist/images/pages/page-01…15.png` | Aperçus haute définition (1588 × 2248 px ≈ 190 dpi) |
+| `dist/images/pages-bonus/page-15…19.png` | Aperçus des 5 pages bonus |
+| `dist/images/covers/cover-*.png` | Couverture de chaque formule |
+| `dist/images/boutique/*.png` | 10 images commerciales 2000 × 2000 |
+| `dist/images/marque/*.png` | Logo carré, logo horizontal, bannière |
 
-**Format vérifié :** 595 × 842 pt = 210 × 297 mm sur les 15 pages des deux fichiers.
+**Format vérifié :** 595 × 842 pt = 210 × 297 mm sur les **84 pages** des six fichiers.
 **Texte sélectionnable** dans le PDF (utile pour la recherche et l'accessibilité).
 
 ## Différence entre les deux PDF
@@ -77,16 +83,16 @@ caractères émojis ont été remplacés par leur équivalent dessiné.
 | Format | A4 | A4 |
 | Fond coloré | oui | oui |
 | Barre de navigation | non | **oui** — 15 onglets cliquables en bas de page |
-| Liens internes | 0 | **225** |
+| Liens internes | 0 | **49** (Basic) · **225** (Complete) · **400** (Ultimate) |
 | Usage | imprimante | GoodNotes, Notability, Xodo, Samsung Notes |
 
 ## Refaire le produit après une modification
 
 ```bash
-npm run build      # régénère les 2 PDF + les 15 aperçus
-npm run mockups    # régénère les 8 images boutique
+npm run build      # régénère les 6 PDF + les aperçus
+npm run mockups    # régénère les 10 images boutique
 npm run brand      # régénère logo et bannière
-npm run verify     # relance les 57 contrôles
+npm run verify     # relance les 137 contrôles
 npm run all        # tout d'un coup
 ```
 

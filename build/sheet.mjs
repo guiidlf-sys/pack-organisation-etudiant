@@ -3,7 +3,8 @@ import { chromium } from 'playwright';
 import { readdirSync, writeFileSync, unlinkSync } from 'fs';
 import { pathToFileURL } from 'url';
 import path from 'path';
-const PAGES = path.resolve('dist/images/pages');
+const PAGES = path.resolve(process.argv[2] || 'dist/images/pages');
+const PREFIX = process.argv[3] || 'sheet';
 const files = readdirSync(PAGES).filter(f => f.endsWith('.png')).sort();
 const groups = [files.slice(0, 6), files.slice(6, 12), files.slice(12)];
 const b = await chromium.launch();
@@ -16,7 +17,7 @@ for (let g = 0; g < groups.length; g++) {
   writeFileSync(tmp, html);
   const p = await b.newPage({ viewport: { width: 2040, height: 100 } });
   await p.goto(pathToFileURL(tmp).href, { waitUntil: 'networkidle' });
-  await p.screenshot({ path: `/tmp/claude-0/-home-user-pack-organisation-etudiant/6d282854-2080-5794-8a89-1b723562c43f/scratchpad/sheet-${g + 1}.png`, fullPage: true });
+  await p.screenshot({ path: `/tmp/claude-0/-home-user-pack-organisation-etudiant/6d282854-2080-5794-8a89-1b723562c43f/scratchpad/${PREFIX}-${g + 1}.png`, fullPage: true });
   await p.close();
   unlinkSync(tmp);
 }

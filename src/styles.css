@@ -70,6 +70,11 @@ html,body{
   display:flex;align-items:center;justify-content:center;
 }
 .head .ic svg{width:6.4mm;height:6.4mm;display:block}
+
+/* Émojis du cahier des charges : titres de page et intitulés de section */
+.head h2 .emo{font-size:13.5pt;margin-right:1.6mm;line-height:1}
+.lbl .emo{font-size:9.6pt;line-height:1;flex:0 0 auto}
+.end h2 .emo{font-size:30pt;line-height:1}
 .head h2{
   font-family:'Outfit',sans-serif;font-weight:800;font-size:15.5pt;line-height:1.05;
   letter-spacing:-.01em;color:var(--ink);text-transform:uppercase;
@@ -196,6 +201,9 @@ td .ck{display:block;margin:0 auto}
 .cover-list{
   margin-top:9mm;display:grid;grid-template-columns:1fr 1fr;gap:2.2mm 8mm;
 }
+.cover-list.dense{grid-template-columns:1fr 1fr 1fr;gap:1.8mm 6mm;margin-top:7mm}
+.cover-list.dense .it{font-size:8pt}
+.cover-list.dense .it .n{width:5mm;height:5mm;font-size:6pt}
 .cover-list .it{
   display:flex;align-items:center;gap:2.6mm;
   font-size:9pt;color:var(--ink-2);
@@ -208,6 +216,13 @@ td .ck{display:block;margin:0 auto}
 .cover-list-title{
   font-family:'Outfit',sans-serif;font-weight:700;font-size:8.4pt;letter-spacing:.1em;
   text-transform:uppercase;color:var(--gray-l);margin-top:9mm;
+}
+.cover-tip{margin-top:10mm;display:grid;gap:2.4mm}
+.cover-tip .it{display:flex;align-items:center;gap:2.8mm;font-size:9pt;color:var(--ink-2)}
+.cover-tip .it .n{
+  flex:0 0 auto;width:5.6mm;height:5.6mm;border-radius:50%;background:var(--violet);
+  font-family:'Outfit',sans-serif;font-weight:700;font-size:6.6pt;color:#fff;
+  display:flex;align-items:center;justify-content:center;
 }
 .cover-meta{
   margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;

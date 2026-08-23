@@ -12,13 +12,13 @@ ses visuels de boutique et sa stratégie de lancement. Coût de production : **0
 
 | | |
 |---|---|
-| 📄 **Le produit** | 15 pages A4 · `dist/Pack_Organisation_Etudiant_2026_2027.pdf` |
-| 📱 **Version tablette** | Mêmes pages + 225 liens de navigation · `…_TABLETTE.pdf` |
-| 🖼️ **Images boutique** | 8 visuels 2000 × 2000 · `dist/images/boutique/` |
+| 📄 **Le produit** | 3 formules : **BASIC** 7 p. · **COMPLETE** 15 p. · **ULTIMATE** 20 p. |
+| 📱 **Version tablette** | Incluse dans chaque formule, avec navigation cliquable |
+| 🖼️ **Images boutique** | 10 visuels 2000 × 2000 · `dist/images/boutique/` |
 | 🎨 **Marque** | Logo, bannière, charte · `dist/images/marque/` |
 | 🏪 **Plateforme** | Payhip — comparatif chiffré dans [doc 01](docs/01-comparatif-plateformes.md) |
-| 💶 **Prix** | 3,99 € — il reste ~3,48 € par vente ([doc 05](docs/05-prix-et-revenus.md)) |
-| ✍️ **Fiche produit** | Écrite, prête à coller ([doc 04](docs/04-fiche-produit.md)) |
+| 💶 **Prix** | 2,99 / 3,99 / 7,99 € — nets ~2,55 / 3,48 / 7,22 € ([doc 05](docs/05-prix-et-revenus.md)) |
+| ✍️ **Fiches produit** | Les 3, prêtes à coller ([doc 04](docs/04-fiche-produit.md)) |
 | 🎬 **TikTok** | 10 vidéos scénarisées ([doc 08](docs/08-tiktok-10-videos.md)) |
 | 📅 **Lancement** | Calendrier jour par jour ([doc 10](docs/10-calendrier-lancement.md)) |
 | 📊 **Suivi** | `dist/suivi-ventes.csv` + méthode d'analyse ([doc 11](docs/11-suivi-resultats.md)) |
@@ -55,17 +55,18 @@ npm run all          # PDF + aperçus + images boutique + marque + contrôles
 
 | Commande | Effet |
 |---|---|
-| `npm run build` | Les 2 PDF et les 15 aperçus PNG |
-| `npm run mockups` | Les 8 images de boutique |
+| `npm run build` | Les 6 PDF et tous les aperçus PNG |
+| `npm run mockups` | Les 10 images de boutique |
 | `npm run brand` | Logo et bannière |
-| `npm run verify` | **57 contrôles qualité** (sort en erreur si un échoue) |
+| `npm run verify` | **137 contrôles qualité** sur les 3 éditions (sort en erreur si un échoue) |
 | `npm run sheet` | Planches contact pour la relecture visuelle |
 
 ## Organisation des fichiers
 
 ```
-src/          planner.mjs (les 15 pages) · styles.css (la charte) · icons.mjs (26 pictos)
-build/        render.mjs · mockups.mjs · brand.mjs · verify.mjs · sheet.mjs
+src/          planner.mjs (pages 1-15 + éditions) · bonus.mjs (5 pages Ultimate)
+              styles.css (la charte) · icons.mjs (pictos de couverture)
+build/        render.mjs · mockups.mjs · brand.mjs · verify.mjs · sheet.mjs · covers.mjs
 assets/fonts/ Inter + Outfit en local (rendu identique partout, hors ligne)
 dist/         LES FICHIERS À VENDRE ET À PUBLIER
 docs/         Le plan de vente complet, du choix de plateforme au 100e client
@@ -77,3 +78,5 @@ docs/         Le plan de vente complet, du choix de plateforme au 100e client
    nulle part de meilleures notes. Une promesse intenable se paie en avis négatifs.
 2. **Aucun contournement des règles des plateformes.** Le compte appartient à une personne
    majeure, point. Un compte fermé, c'est le travail *et* l'argent perdus.
+3. **Le cahier des charges fait foi.** Les émojis, les intitulés et les contenus de page
+   sont repris à l'identique ; `npm run verify` échoue si l'un d'eux disparaît.

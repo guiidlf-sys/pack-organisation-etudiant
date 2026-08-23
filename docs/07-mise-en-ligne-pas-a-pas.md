@@ -10,8 +10,8 @@
 - [ ] Ton adresse e-mail
 - [ ] Un compte PayPal **ou** Stripe à ton nom (créé pendant l'inscription si tu n'en as pas)
 - [ ] Une pièce d'identité à portée de main (vérification Stripe/PayPal)
-- [ ] Les 2 PDF : `dist/Pack_Organisation_Etudiant_2026_2027.pdf` et `..._TABLETTE.pdf`
-- [ ] Les 8 images : `dist/images/boutique/`
+- [ ] Les 6 PDF de `dist/` (3 formules × impression + tablette)
+- [ ] Les 10 images : `dist/images/boutique/`
 - [ ] Le logo : `dist/images/marque/logo-carre.png`
 - [ ] Les textes : doc 03 (boutique) et doc 04 (fiche produit)
 
@@ -43,19 +43,25 @@ d'identité est demandée ici — c'est normal.
 
 *Settings → Tax / VAT* : activer la collecte automatique de la **TVA UE**.
 
-## 3. Créer le produit — 15 min
+## 3. Créer les produits — 25 min
+
+**Commence par COMPLETE** : c'est celui que tu mettras dans toutes les vidéos. Les deux
+autres se dupliquent ensuite en trois minutes chacun.
 
 *Products → Add new product → **Digital product***
 
-| Champ | Quoi mettre |
-|---|---|
-| Product name | le titre du doc 04 |
-| Price | **3.99** EUR |
-| Description | la description détaillée du doc 04 (Payhip accepte la mise en forme) |
-| Files | **les 2 PDF** |
-| Cover image | `01-miniature.png` |
-| Images supplémentaires | `02` à `08`, dans l'ordre |
-| Tags | les mots-clés du doc 04 |
+| Champ | COMPLETE | BASIC | ULTIMATE |
+|---|---|---|---|
+| Product name | titre COMPLETE (doc 04) | titre BASIC | titre ULTIMATE |
+| Price | **3.99** EUR | **2.99** EUR | **7.99** EUR |
+| Description | doc 04 | doc 04 § BASIC | doc 04 § ULTIMATE |
+| Files | `..._2027.pdf` + `..._TABLETTE.pdf` | `..._BASIC.pdf` + `..._BASIC_TABLETTE.pdf` | `..._ULTIMATE.pdf` + `..._ULTIMATE_TABLETTE.pdf` |
+| Cover image | `01-miniature.png` | `09-trois-formules.png` | `10-pages-bonus.png` |
+| Images suivantes | `02` → `09` | `07`, `08` | `07`, `09`, `08` |
+| Tags | mots-clés du doc 04 | idem | idem |
+
+⚠️ **Vérifie deux fois les fichiers attachés à chaque produit.** Livrer le mauvais PDF est
+l'erreur la plus fréquente — et la plus coûteuse en confiance.
 
 Réglages complémentaires :
 

@@ -10,7 +10,8 @@
     "brand": "node build/brand.mjs",
     "verify": "node build/verify.mjs",
     "sheet": "node build/sheet.mjs",
-    "all": "npm run build && npm run mockups && npm run brand && npm run verify"
+    "all": "npm run build && npm run mockups && npm run brand && npm run verify",
+    "covers": "node build/covers.mjs"
   },
   "devDependencies": {
     "playwright": "^1.56.1"

@@ -1,4 +1,8 @@
-# Étape 9 — Fiche produit (texte prêt à copier-coller)
+# Étape 9 — Fiches produit (textes prêts à copier-coller)
+
+> **Trois produits à créer dans la boutique**, pas un seul. Le texte ci-dessous est celui
+> de **COMPLETE** (le produit principal). Les variantes BASIC et ULTIMATE sont en fin de
+> document — elles réutilisent la même description, avec quelques lignes changées.
 
 ## Titre
 
@@ -101,6 +105,39 @@
 · `emploi du temps à imprimer` · `suivi des notes` · `fiche de révision` · `habit tracker`
 · `planner français` · `rentrée 2026` · `planner tablette` · `goodnotes français`
 · `to do list à imprimer` · `révisions bac` · `organisation lycée`
+
+## Fiche BASIC — 2,99 €
+
+**Titre :**
+> **Planner Étudiant Essentiel 2026–2027 | 5 pages A4 à imprimer (semaine, devoirs, révisions)**
+
+**Accroche :**
+> Les 5 pages qu'on utilise vraiment toutes les semaines : ta semaine, ta to-do list, tes
+> devoirs, ton plan de révision et ton suivi des notes. À imprimer autant de fois que tu veux.
+
+**À ajouter en fin de description :**
+> **Tu veux le pack complet ?** La version 15 pages ajoute les objectifs, le habit tracker,
+> le calendrier mensuel, le brain dump et le bilan de la semaine.
+
+## Fiche ULTIMATE — 7,99 €
+
+**Titre :**
+> **Pack Organisation Étudiant ULTIMATE 2026–2027 | 20 pages A4 + 5 pages bonus**
+
+**Accroche :**
+> Le pack complet (15 pages) **plus 5 pages bonus** : suivi de lecture, budget étudiant,
+> rétroplanning d'examen sur 8 semaines, checklist de rentrée et bilan du mois.
+
+**Bloc à insérer après la liste des 15 pages :**
+> ---
+>
+> **LES 5 PAGES BONUS (formule Ultimate)**
+>
+> 16. Mon suivi de lecture — 14 livres, avec dates et note
+> 17. Mon budget étudiant — ce qui rentre, ce qui sort, ce qu'il reste
+> 18. Mon rétroplanning d'examen — les 8 semaines avant le jour J
+> 19. Ma checklist de rentrée — fournitures, administratif, organisation
+> 20. Mon bilan du mois — ce qui a marché, ce que je change
 
 ## Règle de rédaction respectée
 

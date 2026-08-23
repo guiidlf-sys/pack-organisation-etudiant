@@ -13,6 +13,8 @@ const OUT = path.join(IMG, 'boutique');
 mkdirSync(OUT, { recursive: true });
 
 const pg = (n) => `pages/page-${String(n).padStart(2, '0')}.png`;
+const bonus = (n) => `pages-bonus/page-${n}.png`;
+const cover = (k) => `covers/cover-${k}.png`;
 
 const CSS = `
 @import url('../../assets/fonts/fonts.css');
@@ -177,11 +179,57 @@ const marche = html(`
     Aucun article physique n’est expédié. Fichiers PDF à usage personnel.
   </div>`);
 
+/* ------------------------------------------------- 09 trois formules ------ */
+const offre = (titre, prix, pages, liste, k, mise = false) => `
+  <div style="flex:1 1 0;background:${mise ? 'linear-gradient(160deg,#4B63E8,#8B5CF6)' : '#fff'};
+       color:${mise ? '#fff' : '#14142B'};border-radius:24px;padding:26px 22px;
+       border:${mise ? 'none' : '2px solid #E5E2F4'};text-align:center;
+       box-shadow:${mise ? '0 20px 46px rgba(76,60,200,.34)' : '0 8px 22px rgba(20,20,43,.07)'}">
+    <div class="eyebrow" style="font-size:13px;color:${mise ? 'rgba(255,255,255,.86)' : '#6C4FE0'}">${titre}</div>
+    <img src="${cover(k)}" style="width:100%;max-width:150px;margin:16px auto 14px;display:block;
+         border-radius:6px;box-shadow:0 10px 24px rgba(20,20,43,.24)">
+    <h2 style="font-size:42px;letter-spacing:-.02em">${prix}</h2>
+    <div style="font-size:16px;margin-top:6px;color:${mise ? 'rgba(255,255,255,.86)' : '#6E6B85'}">${pages}</div>
+    <div style="height:1px;background:${mise ? 'rgba(255,255,255,.3)' : '#EEECFA'};margin:16px 0"></div>
+    <div style="font-size:15px;line-height:1.75;color:${mise ? 'rgba(255,255,255,.94)' : '#3C3A57'}">${liste}</div>
+  </div>`;
+
+const formules = html(`
+  <div style="text-align:center;margin-bottom:34px">
+    <div class="eyebrow" style="color:#6C4FE0">Trois formules</div>
+    <h1 style="font-size:48px;margin-top:10px">Choisis ce dont tu as besoin</h1>
+  </div>
+  <div style="display:flex;gap:18px;align-items:stretch;width:100%">
+    ${offre('Basic', '2,99 €', '7 pages A4', 'Semaine<br>To-do list<br>Devoirs<br>Plan de révision<br>Suivi des notes', 'basic')}
+    ${offre('Complete', '3,99 €', '15 pages A4', 'Tout le Basic<br>+ 10 pages<br>Objectifs, habitudes,<br>mois, brain dump,<br>bilan hebdo', 'complete', true)}
+    ${offre('Ultimate', '7,99 €', '20 pages A4', 'Tout le Complete<br>+ 5 pages bonus<br>Lecture, budget,<br>rétroplanning,<br>rentrée, bilan mensuel', 'ultimate')}
+  </div>
+  <div style="margin-top:30px;font-size:17px;color:#9C99B0;text-align:center">
+    Chaque formule inclut la version impression <b>et</b> la version tablette.
+  </div>`);
+
+/* --------------------------------------------------- 10 pages bonus ------- */
+const bonusImg = html(`
+  <div style="text-align:center;margin-bottom:30px">
+    <div class="eyebrow" style="color:#6C4FE0">Formule Ultimate</div>
+    <h1 style="font-size:48px;margin-top:10px">5 pages bonus</h1>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px 18px;width:100%">
+    ${[[15, 'Suivi de lecture'], [16, 'Budget étudiant'], [17, 'Rétroplanning d’examen'],
+       [18, 'Checklist de rentrée'], [19, 'Bilan du mois']].map(([n, t]) => `
+      <div style="text-align:center">
+        <img src="${bonus(n)}" style="width:100%;display:block;border-radius:6px;
+             box-shadow:0 10px 24px rgba(20,20,43,.16);background:#fff">
+        <div style="font-family:'Outfit',sans-serif;font-weight:700;font-size:17px;margin-top:12px">${t}</div>
+      </div>`).join('')}
+  </div>`);
+
 /* ------------------------------------------------------------- rendu ----- */
 const SHOTS = [
   ['01-miniature', miniature], ['02-couverture', couverture], ['03-planning', planning],
   ['04-todo-list', todo], ['05-revisions', revision], ['06-suivi-notes', notes],
   ['07-apercu-15-pages', apercu], ['08-comment-ca-marche', marche],
+  ['09-trois-formules', formules], ['10-pages-bonus', bonusImg],
 ];
 
 const browser = await chromium.launch();

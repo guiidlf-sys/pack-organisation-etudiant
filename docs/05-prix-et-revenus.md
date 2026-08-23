@@ -42,20 +42,43 @@ en ligne sont imposables selon la situation de la personne qui détient le compt
 **Et le coût de production ?** 0 €. Le produit est déjà fait, il n'y a pas de stock, pas
 d'expédition, pas de réimpression. Chaque vente supplémentaire ne coûte rien de plus.
 
-## La stratégie à 3 niveaux (2,99 / 4,99 / 7,99)
+## Les trois formules — désormais réelles
 
-Elle est bonne — mais elle **ne fonctionne pas avec un seul produit**. Trois prix
-demandent trois offres réellement différentes, sinon l'acheteur ne comprend pas pourquoi
-il paierait plus. Le calendrier réaliste :
+La stratégie à trois paliers demandée dans le cahier des charges est en place : les trois
+fichiers existent, ce ne sont pas trois prix pour le même produit.
 
-| Palier | Contenu | Prix | Quand |
-|---|---|---|---|
-| **BASIC** | Version 5 pages (semaine, to-do, devoirs, révision, notes) | 2,99 € | Quand le pack complet existe déjà — sert d'entrée de gamme |
-| **COMPLETE** | Le pack 15 pages actuel | **3,99 € puis 4,99 €** | **Maintenant** |
-| **ULTIMATE** | Pack 15 pages + Pack Révisions + Pack Examens | 7,99 € | Quand 2 autres packs existent (doc 13) |
+| Formule | Contenu | Pages | Prix | Il te reste |
+|---|---|---|---|---|
+| **BASIC** | Les 5 pages utilisées toutes les semaines : semaine, to-do, devoirs, plan de révision, suivi des notes | 7 | **2,99 €** | ~2,55 € |
+| **COMPLETE** | Le pack complet | 15 | **3,99 €** *(puis 4,99 €)* | ~3,48 € |
+| **ULTIMATE** | Le pack complet + 5 pages bonus : suivi de lecture, budget étudiant, rétroplanning d'examen, checklist de rentrée, bilan du mois | 20 | **7,99 €** | ~7,22 € |
 
-**Décision : on lance uniquement COMPLETE à 3,99 €.** Une seule fiche produit, un seul
-message. Les paliers arrivent avec la gamme, pas avant.
+Chaque formule contient **deux fichiers** : version impression et version tablette.
+
+### Pourquoi ces trois-là, et pas trois prix arbitraires
+
+- **BASIC** attrape ceux qui hésitent à 3,99 €. Il ne cannibalise pas : cinq pages, c'est
+  utile mais visiblement incomplet — celui qui accroche revient acheter la suite.
+- **COMPLETE** est le produit central. C'est celui qu'on met en avant dans toutes les vidéos.
+- **ULTIMATE** double le panier moyen pour le même effort de promotion. C'est le levier le
+  plus rentable de la boutique : **une vente ULTIMATE rapporte autant que deux COMPLETE.**
+
+### L'effet d'ancrage
+
+Présenter les trois côte à côte (image `09-trois-formules.png`) rend COMPLETE évident :
+il est encadré par une formule qui paraît trop courte et une qui paraît chère. La plupart
+des acheteurs prennent celle du milieu — c'est exactement là qu'on l'a placée.
+
+### Comparaison des revenus selon la formule vendue
+
+| | 10 ventes | 25 ventes | 50 ventes | 100 ventes |
+|---|---|---|---|---|
+| Tout en BASIC | 25,50 € | 63,75 € | 127,50 € | 255,00 € |
+| Tout en COMPLETE | 34,80 € | 87,00 € | 174,00 € | 348,00 € |
+| Tout en ULTIMATE | 72,20 € | 180,50 € | 361,00 € | 722,00 € |
+| **Mix réaliste** *(20 % basic, 60 % complete, 20 % ultimate)* | **38,50 €** | **96,20 €** | **192,50 €** | **385,00 €** |
+
+*Montants après frais de plateforme et de paiement, avant impôt.*
 
 ## Le passage à 4,99 €
 

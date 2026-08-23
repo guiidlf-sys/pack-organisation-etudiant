@@ -4,9 +4,9 @@
 
 | Jour | À faire | Durée | Fait |
 |---|---|---|---|
-| **1** | ✅ Finaliser le produit — *déjà fait* : PDF impression + PDF tablette + 8 images | — | ✅ |
+| **1** | ✅ Finaliser le produit — *déjà fait* : 3 formules × 2 PDF + 10 images | — | ✅ |
 | **2** | Créer la boutique Payhip (doc 07 §1-2) + créer les comptes TikTok et Pinterest au nom `studio.recap` | 45 min | ☐ |
-| **3** | Mettre le produit en ligne (doc 07 §3-6) **+ faire le test d'achat complet** | 40 min | ☐ |
+| **3** | Mettre les **3 produits** en ligne (doc 07 §3-6) **+ test d'achat complet** | 50 min | ☐ |
 | **4** | Filmer et publier la **vidéo 1** (problème → solution). Mettre le lien en bio. | 45 min | ☐ |
 | **5** | Publier la **vidéo 3** (démo des 15 pages). Publier 2 épingles Pinterest. | 40 min | ☐ |
 | **6** | Publier la **vidéo 4** (astuce 3 priorités). Répondre à tous les commentaires. | 40 min | ☐ |
@@ -41,7 +41,7 @@ boutique qui fonctionne et 3 vidéos en ligne. Les ventes viennent après.
 |---|---|
 | 5 | Publier le **Pack Révisions** (doc 13) — le deuxième produit |
 | 6 | Ouvrir la boutique **Etsy** si le pack s'est vendu au moins 10 fois |
-| 7 | Créer le pack **ULTIMATE** (offre groupée) une fois 2 produits en ligne |
+| 7 | Mettre l'accent sur **ULTIMATE** dans 2 vidéos (panier moyen ×2) |
 | 8 | Bilan du mois : ce qui a marché, ce qu'on arrête |
 
 ## Le rythme, honnêtement

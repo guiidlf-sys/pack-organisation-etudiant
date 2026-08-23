@@ -1,13 +1,13 @@
 # État du projet — Pack Organisation Étudiant 2026-2027
 
-*Dernière mise à jour : 24 août 2026 — titulaire du compte et nom de boutique confirmés*
+*Dernière mise à jour : 24 août 2026 — trois formules produites, émojis du cahier des charges rétablis*
 
 ## Où on en est
 
 ```
-[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□□□□□□□□□□□□□□]  ~70 %
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□□□□□□□□□□]  ~75 %
 
-PRODUIT ✅ FINI          BOUTIQUE ⏳ À CRÉER (toi)      PROMOTION 📦 PRÊTE
+PRODUIT ✅ FINI (×3)     BOUTIQUE ⏳ À CRÉER (toi)      PROMOTION 📦 PRÊTE
 ```
 
 ## Les 19 étapes
@@ -15,17 +15,17 @@ PRODUIT ✅ FINI          BOUTIQUE ⏳ À CRÉER (toi)      PROMOTION 📦 PRÊT
 | # | Étape | État | Où |
 |---|---|---|---|
 | 1 | Choisir l'outil de création | ✅ Fait | HTML/CSS + Chromium — reproductible, 0 € |
-| 2 | Créer le produit | ✅ Fait | `dist/…pdf` |
-| 3 | Vérifier le produit | ✅ Fait | doc 14 — 57 contrôles |
-| 4 | Corriger les erreurs | ✅ Fait | doc 14 — 8 défauts corrigés |
-| 5 | Exporter les fichiers | ✅ Fait | 2 PDF + 26 images |
+| 2 | Créer le produit | ✅ Fait | **3 formules × 2 PDF** dans `dist/` |
+| 3 | Vérifier le produit | ✅ Fait | doc 14 — **137 contrôles** sur les 3 éditions |
+| 4 | Corriger les erreurs | ✅ Fait | doc 14 — 8 défauts corrigés + émojis rétablis |
+| 5 | Exporter les fichiers | ✅ Fait | 6 PDF + 41 images |
 | 6 | Choisir la plateforme | ✅ Fait | **Payhip** — doc 01 |
 | 7 | Vérifier âge et paiement | ✅ Fait | doc 02 |
 | 8 | Créer la boutique | ⏳ **À toi** | doc 07 §1-2 |
-| 9 | Créer la fiche produit | ✅ Rédigée | doc 04 — à coller |
-| 10 | Ajouter le fichier numérique | ⏳ **À toi** | doc 07 §3 |
-| 11 | Préparer les images | ✅ Fait | `dist/images/boutique/` |
-| 12 | Préparer le prix | ✅ Fait | **3,99 €** — doc 05 |
+| 9 | Créer la fiche produit | ✅ Rédigées ×3 | doc 04 — à coller |
+| 10 | Ajouter les fichiers numériques | ⏳ **À toi** | doc 07 §3 |
+| 11 | Préparer les images | ✅ Fait | 10 images · `dist/images/boutique/` |
+| 12 | Préparer le prix | ✅ Fait | **2,99 / 3,99 / 7,99 €** — doc 05 |
 | 13 | Téléchargement automatique | ✅ Paramétrage prêt | doc 06 |
 | 14 | Stratégie marketing | ✅ Fait | docs 08 et 09 |
 | 15 | Vidéos TikTok | ✅ 10 scénarios écrits | doc 08 |
@@ -42,9 +42,9 @@ PRODUIT ✅ FINI          BOUTIQUE ⏳ À CRÉER (toi)      PROMOTION 📦 PRÊT
 | Plateforme | **Payhip** (offre gratuite, 5 %) | Le moins cher sur un produit à 3,99 € ; TVA UE gérée |
 | Etsy | **Plus tard**, après 10 ventes | Frais de mise en ligne inutiles avant validation |
 | Nom de boutique | **Studio Récap** ✅ confirmé | Court, extensible à toute la gamme |
-| Prix de lancement | **3,99 €**, puis 4,99 € après 25 ventes | Achat impulsif ; les frais fixes pèsent trop en dessous |
-| Paliers 2,99/4,99/7,99 | Repoussés | Demandent 3 produits distincts (doc 05) |
-| Émojis des titres | Remplacés par des pictogrammes SVG | Cohérence visuelle (doc 14) |
+| Prix | **BASIC 2,99 € · COMPLETE 3,99 € · ULTIMATE 7,99 €** | Trois offres réellement différentes, effet d'ancrage sur COMPLETE |
+| Paliers 2,99/4,99/7,99 | ✅ **Produits** | Les 3 fichiers existent : 7, 15 et 20 pages |
+| Émojis des titres | **Ceux du cahier des charges, à l'identique** | Conformité stricte au brief ; contrôlée par `verify` |
 | Code promo | `RENTREE` −20 %, 15 jours | Donne une raison d'acheter maintenant |
 | Publicité payante | Aucune avant 50 ventes | Pas d'argent brûlé sur une page non validée |
 
