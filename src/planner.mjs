@@ -61,7 +61,7 @@ const p1 = () => `
       <span>Pack</span>
       <span class="l2">Organisation Étudiant</span>
     </div>
-    <div class="cover-tag">Ton kit pour mieux t'organiser, travailler efficacement et suivre tes progrès.</div>
+    <div class="cover-tag">Ton kit pour mieux t’organiser, travailler efficacement et suivre tes progrès.</div>
     <div class="cover-icons">
       <div class="ci">${icon('books')}</div>
       <div class="ci">${icon('calendar')}</div>
@@ -91,7 +91,7 @@ const p1 = () => `
 /* =============================================================== PAGE 2 === */
 const p2 = () => page({
   n: 2, ic: 'user', title: 'Moi &amp; mes objectifs',
-  sub: 'Pose tes bases pour l\'année : qui tu es, et où tu veux aller.',
+  sub: 'Pose tes bases pour l’année : qui tu es, et où tu veux aller.',
   body: `
   <div class="card tinted">
     <div class="grid g3 gap-s">
@@ -110,7 +110,7 @@ const p2 = () => page({
     <div class="card fillcard">
       ${lbl('La matière que je veux améliorer', 'trend')}
       ${fill(lines(1))}
-      <div class="txt-s" style="margin-top:2mm">Pourquoi ? Qu'est-ce qui bloque aujourd'hui ?</div>
+      <div class="txt-s" style="margin-top:2mm">Pourquoi ? Qu’est-ce qui bloque aujourd’hui ?</div>
       ${fill(lines(1))}
     </div>
   </div>
@@ -161,7 +161,7 @@ const dayBlock = (d) => `
 
 const p4 = () => page({
   n: 4, ic: 'week', title: 'Ma semaine',
-  sub: 'Une vue d\'ensemble pour ne rien laisser passer.',
+  sub: 'Une vue d’ensemble pour ne rien laisser passer.',
   body: `
   <div class="card tinted" style="padding:3mm 5mm">
     <div class="field"><span class="k">Semaine du</span><span class="v" style="max-width:38mm"></span><span class="k">au</span><span class="v" style="max-width:38mm"></span></div>
@@ -189,12 +189,12 @@ const p5 = () => page({
     ${fill(tasks(4))}
   </div>
   <div class="card fillcard" style="margin-top:4mm;border-left:1.2mm solid var(--green)">
-    ${dotLbl('Si j\'ai le temps', 'green')}
+    ${dotLbl('Si j’ai le temps', 'green')}
     ${fill(tasks(3))}
   </div>
   <div class="card accent" style="margin-top:4mm;flex:0 0 auto">
     <div class="lbl" style="color:#fff">${icon('party')}<span>Tout est fait !</span></div>
-    <div class="txt-s" style="color:rgba(255,255,255,.85);margin-bottom:1.4mm">Aujourd'hui, je suis fier/fière de moi parce que :</div>
+    <div class="txt-s" style="color:rgba(255,255,255,.85);margin-bottom:1.4mm">Aujourd’hui, je suis fier/fière de moi parce que :</div>
     ${lines(2)}
   </div>`
 });
@@ -260,7 +260,7 @@ const p7 = () => page({
   </table>
   <div class="card accent" style="margin-top:5mm;flex:0 0 auto">
     <div class="txt-s" style="color:rgba(255,255,255,.9);font-size:8pt">
-      Astuce : mieux vaut 3 sessions de 25 minutes réparties sur la semaine qu'une seule longue veille de contrôle.
+      Astuce : mieux vaut 3 sessions de 25 minutes réparties sur la semaine qu’une seule longue veille de contrôle.
     </div>
   </div>`
 });
@@ -268,7 +268,7 @@ const p7 = () => page({
 /* =============================================================== PAGE 8 === */
 const p8 = () => page({
   n: 8, ic: 'note', title: 'Fiche de révision',
-  sub: 'Une fiche = un chapitre. Va à l\'essentiel.',
+  sub: 'Une fiche = un chapitre. Va à l’essentiel.',
   body: `
   <div class="card tinted">
     <div class="grid g2 gap-s">${field('Matière')}${field('Chapitre')}</div>
@@ -351,11 +351,11 @@ const p10 = () => page({
 });
 
 /* ============================================================== PAGE 11 === */
-const HABITS = ['Réviser', 'Lire', 'Faire mes devoirs', 'Préparer mon sac', 'Dormir à l\'heure'];
+const HABITS = ['Réviser', 'Lire', 'Faire mes devoirs', 'Préparer mon sac', 'Dormir à l’heure'];
 
 const p11 = () => page({
   n: 11, ic: 'flame', title: 'Habit tracker',
-  sub: 'Coche chaque jour réussi. L\'objectif : ne pas casser la série.',
+  sub: 'Coche chaque jour réussi. L’objectif : ne pas casser la série.',
   body: `
   <div class="card" style="padding:4mm;flex:0 0 auto">
     <table class="tracker">
@@ -387,13 +387,13 @@ const p11 = () => page({
       </div>
     </div>
     <div class="card accent fillcard">
-      ${lbl('Ce que ça m\'apporte', 'star')}
+      ${lbl('Ce que ça m’apporte', 'star')}
       ${fill(lines(3))}
     </div>
   </div>
   <div class="card accent" style="margin-top:5mm;flex:0 0 auto">
     <div class="txt-s" style="color:rgba(255,255,255,.9);font-size:8pt">
-      Une case oubliée n'annule rien. Reprends simplement le lendemain.
+      Une case oubliée n’annule rien. Reprends simplement le lendemain.
     </div>
   </div>`
 });
@@ -401,7 +401,7 @@ const p11 = () => page({
 /* ============================================================== PAGE 12 === */
 const p12 = () => page({
   n: 12, ic: 'calendar', title: 'Mon mois',
-  sub: 'La vue d\'ensemble : contrôles, rendus, dates à retenir.',
+  sub: 'La vue d’ensemble : contrôles, rendus, dates à retenir.',
   body: `
   <div class="card tinted" style="padding:3mm 5mm;flex:0 0 auto">
     <div class="field"><span class="k">Mois</span><span class="v"></span></div>
@@ -447,7 +447,7 @@ const p14 = () => page({
   sub: 'Cinq minutes le dimanche soir, et la semaine suivante démarre mieux.',
   body: `
   <div class="card fillcard">
-    ${lbl('Ce que j\'ai réussi', 'party')}
+    ${lbl('Ce que j’ai réussi', 'party')}
     ${fill(lines(3))}
   </div>
   <div class="card fillcard" style="margin-top:4mm">
@@ -476,7 +476,7 @@ const p15 = () => `
   <h2>Tu es capable.</h2>
   <div class="quote">Une journée à la fois.<br>Un objectif à la fois.</div>
   <div class="thanks">
-    Merci d'avoir choisi ce planner !
+    Merci d’avoir choisi ce planner !
     <div class="brand" style="margin-top:4mm">Pack Organisation Étudiant</div>
   </div>
   <div class="legal">Produit numérique — usage personnel uniquement.</div>
