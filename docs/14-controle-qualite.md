@@ -3,10 +3,10 @@
 ## Contrôle automatique
 
 ```bash
-npm run verify      # 137 contrôles, sortie en erreur si un seul échoue
+npm run verify      # 148 contrôles, sortie en erreur si un seul échoue
 ```
 
-Résultat de la dernière exécution : **137 contrôles réussis, 0 problème.**
+Résultat de la dernière exécution : **148 contrôles réussis, 0 problème.**
 Les contrôles tournent sur **les trois éditions** (BASIC 7 p., COMPLETE 15 p., ULTIMATE 20 p.).
 
 Ce que le script vérifie (`build/verify.mjs`) :
@@ -72,6 +72,8 @@ d'émoji.
 | `dist/images/covers/cover-*.png` | Couverture de chaque formule |
 | `dist/images/boutique/*.png` | 10 images commerciales 2000 × 2000 |
 | `dist/images/marque/*.png` | Logo carré, logo horizontal, bannière |
+| `dist/images/pinterest/*.png` | 10 épingles 1000 × 1500 |
+| `dist/page-produit.html` | Page de vente (fragment autonome, images en data-URI) |
 
 **Format vérifié :** 595 × 842 pt = 210 × 297 mm sur les **84 pages** des six fichiers.
 **Texte sélectionnable** dans le PDF (utile pour la recherche et l'accessibilité).
@@ -92,7 +94,7 @@ d'émoji.
 npm run build      # régénère les 6 PDF + les aperçus
 npm run mockups    # régénère les 10 images boutique
 npm run brand      # régénère logo et bannière
-npm run verify     # relance les 137 contrôles
+npm run verify     # relance les 148 contrôles
 npm run all        # tout d'un coup
 ```
 

@@ -9,23 +9,46 @@ Pinterest est un **moteur de recherche**, pas un réseau social. Une épingle pu
 aujourd'hui peut encore amener des visites dans six mois — l'inverse exact de TikTok.
 Et le public y cherche précisément « planner à imprimer ».
 
+**Les 10 épingles sont déjà fabriquées** — `dist/images/pinterest/`, au format 1000 × 1500
+(le ratio 2:3 que Pinterest met en avant). Il n'y a rien à créer, seulement à publier.
+
 **Mise en place (30 min) :**
 
 1. Créer un compte **professionnel** (gratuit) — il donne les statistiques.
 2. Trois tableaux : `Organisation étudiante`, `Planner à imprimer`, `Méthodes de révision`.
-3. Publier les 8 images de `dist/images/boutique/` comme épingles, une par jour.
-4. Chaque épingle : titre descriptif + 2 phrases + **le lien de la page produit**.
+3. Publier une épingle par jour, dans l'ordre du tableau ci-dessous.
+4. Chaque épingle : le titre ci-dessous + la description + **le lien de la page produit**.
 
-**Titres d'épingles qui fonctionnent** (on écrit ce que les gens tapent) :
+### Les 10 épingles, prêtes à publier
 
-- « Planner étudiant à imprimer 2026-2027 — 15 pages A4 »
-- « Emploi du temps à imprimer gratuit… version complète »
-- « Fiche de révision à imprimer — modèle simple »
-- « Suivi des notes à imprimer pour le lycée »
-- « Habit tracker 31 jours à imprimer »
+| # | Fichier | Titre à saisir | Tableau |
+|---|---|---|---|
+| 1 | `01-planner-etudiant.png` | Planner étudiant à imprimer 2026-2027 — 15 pages A4 | Planner à imprimer |
+| 2 | `02-emploi-du-temps.png` | Emploi du temps à imprimer — modèle A4 vierge | Organisation étudiante |
+| 3 | `03-to-do-list.png` | To-do list à imprimer — 3 niveaux de priorité | Organisation étudiante |
+| 4 | `04-suivi-devoirs.png` | Suivi des devoirs à imprimer — tableau A4 | Organisation étudiante |
+| 5 | `05-fiche-revision.png` | Fiche de révision à imprimer — modèle simple | Méthodes de révision |
+| 6 | `06-suivi-des-notes.png` | Suivi des notes à imprimer — tableau sur 20 | Organisation étudiante |
+| 7 | `07-habit-tracker.png` | Habit tracker 31 jours à imprimer | Planner à imprimer |
+| 8 | `08-calendrier-mensuel.png` | Calendrier mensuel à imprimer — vierge A4 | Planner à imprimer |
+| 9 | `09-planner-tablette.png` | Planner GoodNotes en français — PDF hyperlié | Planner à imprimer |
+| 10 | `10-budget-etudiant.png` | Budget étudiant à imprimer — suivi mensuel | Organisation étudiante |
 
-**Rythme :** 1 épingle par jour pendant 2 semaines, puis 3 par semaine. On peut republier
-la même image avec un titre différent — c'est admis sur Pinterest.
+**Description type** (à adapter en changeant la première phrase pour chaque épingle) :
+
+> Emploi du temps à imprimer, au format A4, pour organiser ta semaine de 8 h à 17 h.
+> Fait partie du Pack Organisation Étudiant 2026-2027 : 15 pages à imprimer autant de fois
+> que tu veux, ou à remplir sur tablette. Planning, devoirs, révisions, objectifs et suivi
+> des notes. Téléchargement immédiat.
+> #organisation #etudiant #planner #révisions #rentrée
+
+**Pourquoi ces titres-là :** ils reprennent mot pour mot ce que les gens tapent dans la
+barre de recherche Pinterest. « Planner esthétique violet » ne se cherche pas ;
+« emploi du temps à imprimer », si.
+
+**Rythme :** 1 épingle par jour pendant 10 jours, puis 3 par semaine. On peut republier la
+même image avec un titre différent — c'est admis sur Pinterest, et ça permet de tester
+quelle formulation attire le plus.
 
 ## 2. Instagram Reels — recyclage à coût nul
 

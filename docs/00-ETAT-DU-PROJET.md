@@ -1,13 +1,14 @@
 # État du projet — Pack Organisation Étudiant 2026-2027
 
-*Dernière mise à jour : 24 août 2026 — trois formules produites, émojis du cahier des charges rétablis*
+*Dernière mise à jour : 24 août 2026 — page de vente publiée, 10 épingles Pinterest prêtes*
 
 ## Où on en est
 
 ```
-[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□□□□□□□□□□]  ~75 %
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□□□□□□□]  ~80 %
 
 PRODUIT ✅ FINI (×3)     BOUTIQUE ⏳ À CRÉER (toi)      PROMOTION 📦 PRÊTE
+PAGE DE VENTE ✅ EN LIGNE (privée — à rendre publique depuis le menu de partage)
 ```
 
 ## Les 19 étapes
@@ -28,6 +29,8 @@ PRODUIT ✅ FINI (×3)     BOUTIQUE ⏳ À CRÉER (toi)      PROMOTION 📦 PRÊ
 | 12 | Préparer le prix | ✅ Fait | **2,99 / 3,99 / 7,99 €** — doc 05 |
 | 13 | Téléchargement automatique | ✅ Paramétrage prêt | doc 06 |
 | 14 | Stratégie marketing | ✅ Fait | docs 08 et 09 |
+| 14b | Épingles Pinterest | ✅ **Fabriquées** | 10 visuels 1000×1500 · `dist/images/pinterest/` |
+| 14c | Page de vente en ligne | ✅ **Publiée** | https://claude.ai/code/artifact/7e569b13-2b7e-423b-91a4-6704418f2050 |
 | 15 | Vidéos TikTok | ✅ 10 scénarios écrits | doc 08 |
 | 16 | Publier le produit | ⏳ **À toi** | doc 07 §5 (test d'achat) |
 | 17 | Suivre les résultats | ✅ Outil prêt | doc 11 + `dist/suivi-ventes.csv` |
@@ -57,6 +60,10 @@ Ce sont des actions personnelles — personne ne peut les faire à ta place.
 
 👉 **Prochaine action : `docs/07-mise-en-ligne-pas-a-pas.md`, 45 minutes.**
 
+En attendant, deux choses peuvent déjà partir sans compte de paiement :
+le **compte Pinterest** et ses 10 épingles (doc 09), et le **compte TikTok**
+avec la page de vente en bio.
+
 ✅ **Titulaire du compte confirmé : toi (majeur).** Aucune démarche préalable, aucun
 statut à créer pour faire les premières ventes. Le point fiscal est traité au § 3 du
 doc 02 : la micro-entreprise devient nécessaire quand l'activité devient régulière,
@@ -76,4 +83,4 @@ pas pour tester.
 | ~~Qui détient le compte~~ | ✅ **Réglé** — toi, tu es majeur | — |
 | ~~Nom de boutique~~ | ✅ **Réglé** — Studio Récap | — |
 | Disponibilité de `studiorecap` | Si le nom est pris sur Payhip ou TikTok, on bascule sur « Méthode Claire » | À l'inscription |
-| L'URL de ta page produit | À mettre dans les bios TikTok / Instagram / Pinterest | Après l'étape 10 |
+| L'URL de ta page produit Payhip | Pour activer les boutons de la page de vente (constante `CHECKOUT` dans `dist/page-produit.html`) et remplir les bios | Après l'étape 10 |

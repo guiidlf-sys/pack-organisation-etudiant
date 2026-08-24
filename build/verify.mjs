@@ -16,8 +16,11 @@ const FILES = [
   ...['01-miniature', '02-couverture', '03-planning', '04-todo-list', '05-revisions',
       '06-suivi-notes', '07-apercu-15-pages', '08-comment-ca-marche', '09-trois-formules',
       '10-pages-bonus'].map((n) => `dist/images/boutique/${n}.png`),
+  ...['01-planner-etudiant', '02-emploi-du-temps', '03-to-do-list', '04-suivi-devoirs',
+      '05-fiche-revision', '06-suivi-des-notes', '07-habit-tracker', '08-calendrier-mensuel',
+      '09-planner-tablette', '10-budget-etudiant'].map((n) => `dist/images/pinterest/${n}.png`),
   'dist/images/marque/logo-carre.png', 'dist/images/marque/logo-horizontal.png',
-  'dist/images/marque/banniere.png', 'dist/suivi-ventes.csv',
+  'dist/images/marque/banniere.png', 'dist/suivi-ventes.csv', 'dist/page-produit.html',
 ];
 FILES.forEach((f) => {
   const min = f.endsWith('.csv') ? 200 : 1000;

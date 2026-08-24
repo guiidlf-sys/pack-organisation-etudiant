@@ -5,10 +5,10 @@
 | Jour | À faire | Durée | Fait |
 |---|---|---|---|
 | **1** | ✅ Finaliser le produit — *déjà fait* : 3 formules × 2 PDF + 10 images | — | ✅ |
-| **2** | Créer la boutique Payhip (doc 07 §1-2) + créer les comptes TikTok et Pinterest au nom `studio.recap` | 45 min | ☐ |
+| **2** | Créer la boutique Payhip (doc 07 §1-2) + les comptes TikTok et Pinterest `studio.recap`. **Publier les 3 premières épingles** (elles sont prêtes, doc 09) | 60 min | ☐ |
 | **3** | Mettre les **3 produits** en ligne (doc 07 §3-6) **+ test d'achat complet** | 50 min | ☐ |
 | **4** | Filmer et publier la **vidéo 1** (problème → solution). Mettre le lien en bio. | 45 min | ☐ |
-| **5** | Publier la **vidéo 3** (démo des 15 pages). Publier 2 épingles Pinterest. | 40 min | ☐ |
+| **5** | Publier la **vidéo 3** (démo des 15 pages). 2 épingles de plus. | 40 min | ☐ |
 | **6** | Publier la **vidéo 4** (astuce 3 priorités). Répondre à tous les commentaires. | 40 min | ☐ |
 | **7** | **Analyse** : remplir le tableau de suivi (doc 11), lire les chiffres, décider de la suite. | 20 min | ☐ |
 

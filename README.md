@@ -20,6 +20,8 @@ ses visuels de boutique et sa stratégie de lancement. Coût de production : **0
 | 💶 **Prix** | 2,99 / 3,99 / 7,99 € — nets ~2,55 / 3,48 / 7,22 € ([doc 05](docs/05-prix-et-revenus.md)) |
 | ✍️ **Fiches produit** | Les 3, prêtes à coller ([doc 04](docs/04-fiche-produit.md)) |
 | 🎬 **TikTok** | 10 vidéos scénarisées ([doc 08](docs/08-tiktok-10-videos.md)) |
+| 📌 **Pinterest** | 10 épingles 1000 × 1500 prêtes à publier · `dist/images/pinterest/` |
+| 🌐 **Page de vente** | Publiée : [voir la page](https://claude.ai/code/artifact/7e569b13-2b7e-423b-91a4-6704418f2050) |
 | 📅 **Lancement** | Calendrier jour par jour ([doc 10](docs/10-calendrier-lancement.md)) |
 | 📊 **Suivi** | `dist/suivi-ventes.csv` + méthode d'analyse ([doc 11](docs/11-suivi-resultats.md)) |
 
@@ -58,7 +60,9 @@ npm run all          # PDF + aperçus + images boutique + marque + contrôles
 | `npm run build` | Les 6 PDF et tous les aperçus PNG |
 | `npm run mockups` | Les 10 images de boutique |
 | `npm run brand` | Logo et bannière |
-| `npm run verify` | **137 contrôles qualité** sur les 3 éditions (sort en erreur si un échoue) |
+| `npm run pins` | Les 10 épingles Pinterest |
+| `npm run page` | La page de vente (`dist/page-produit.html`) |
+| `npm run verify` | **148 contrôles qualité** sur les 3 éditions (sort en erreur si un échoue) |
 | `npm run sheet` | Planches contact pour la relecture visuelle |
 
 ## Organisation des fichiers
@@ -66,7 +70,8 @@ npm run all          # PDF + aperçus + images boutique + marque + contrôles
 ```
 src/          planner.mjs (pages 1-15 + éditions) · bonus.mjs (5 pages Ultimate)
               styles.css (la charte) · icons.mjs (pictos de couverture)
-build/        render.mjs · mockups.mjs · brand.mjs · verify.mjs · sheet.mjs · covers.mjs
+build/        render.mjs · mockups.mjs · brand.mjs · pins.mjs · page.py
+              verify.mjs · sheet.mjs · covers.mjs · preview.mjs
 assets/fonts/ Inter + Outfit en local (rendu identique partout, hors ligne)
 dist/         LES FICHIERS À VENDRE ET À PUBLIER
 docs/         Le plan de vente complet, du choix de plateforme au 100e client
