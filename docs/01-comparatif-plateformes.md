@@ -62,9 +62,46 @@ est faite pour ça.
 Ne pas mettre les deux en place le même jour : une boutique bien remplie vaut mieux
 que deux boutiques à moitié faites.
 
+## Payhip est-il obligatoire ?
+
+**Non.** C'est le choix le moins cher pour un produit à 3,99 €, rien de plus. Toutes ces
+plateformes vendent un PDF avec livraison automatique :
+
+| Plateforme | Coût sur une vente à 3,99 € | Il te reste | Remarque |
+|---|---|---|---|
+| **Payhip** (gratuit) | 5 % + Stripe | **3,48 €** | TVA UE annoncée comme gérée automatiquement |
+| **Ko-fi** (gratuit) | 5 % + Stripe/PayPal | **3,48 €** | Identique côté frais ; vérifier la gestion de la TVA UE avant de choisir |
+| **Lemon Squeezy** | 5 % + 0,50 $ | 3,33 € | *Merchant of record* : la TVA est entièrement prise en charge |
+| **Gumroad** | 10 % + 0,50 $ | 3,13 € | Le frais fixe pèse trop à ce prix |
+| **Etsy** | 6,5 % + 4 % + 0,30 € + mise en ligne | 3,09 € | Le seul à apporter du trafic |
+| **Shopify** | ~30 €/mois + frais | variable | Il faut ~10 ventes par mois **juste pour payer l'abonnement** |
+
+Ko-fi vaut exactement Payhip côté frais. Si tu as déjà un compte Ko-fi, garde-le : la
+différence de revenu est nulle, et un compte qui existe déjà bat un compte à créer.
+
+## Ce qui, en revanche, est vraiment obligatoire
+
+Aucune plateforme ne contourne ceci, parce que ce n'est pas une règle de plateforme mais
+une **obligation légale** pesant sur tout prestataire de paiement (vérification d'identité,
+lutte contre le blanchiment) :
+
+1. un compte au nom d'une **personne majeure** ;
+2. une **vérification d'identité** (pièce d'identité) ;
+3. un **compte bancaire ou PayPal** pour recevoir les fonds.
+
+Changer Payhip pour Ko-fi, Gumroad ou Etsy ne supprime aucune de ces trois étapes. C'est
+le prix d'entrée pour encaisser de l'argent en ligne, quel que soit le guichet.
+
+**La seule voie sans aucun compte : la vente en main propre.** Espèces, ou virement entre
+particuliers, et tu envoies le PDF toi-même. Ça ne s'automatise pas et ça ne dépasse pas
+ton entourage — mais pour les toutes premières ventes, ça fonctionne, et c'est souvent de
+là qu'elles viennent (doc 12).
+
 ## Sources
 
 - [Payhip — Pricing](https://payhip.com/pricing)
+- [Ko-fi — Fees 2026](https://latuos.com/ko-fi-fees/)
+- [Lemon Squeezy — Fees 2026](https://getstacksmart.com/blog/lemon-squeezy-merchant-of-record-fees-2026)
 - [Gumroad — Pricing](https://gumroad.com/pricing)
 - [Frais Etsy 2026 — calcul complet](https://artisansdeuxpointzero.fr/frais-etsy-2026-calcul-complet)
 - [Vendre sur Etsy en France 2026](https://artisansdeuxpointzero.fr/vendre-sur-etsy-france-frais-fiscalite-rentabilite)
